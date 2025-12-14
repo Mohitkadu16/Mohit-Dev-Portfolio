@@ -1,0 +1,133 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  height: min-content;
+  background: transparent;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 5%;
+  overflow-x: hidden;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #6a5cff 0%, #a259ff 100%);
+    color: #fff;
+    padding: 0.9rem 2.5rem;
+    border: none;
+    border-radius: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2.2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 16px #00000033;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    outline: none;
+    gap: 0.8rem;
+    letter-spacing: 0.2px;
+}
+
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #a259ff 0%, #6a5cff 100%);
+    box-shadow: 0 4px 24px #a259ff55;
+    transform: translateY(-2px) scale(1.03);
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+.hero-gradient {
+  background: linear-gradient(90deg, #a259ff 0%, #6a5cff 50%, #ff6ec4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 700;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.hero-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b9b9b9;
+  font-size: 1.15rem;
+  margin: 1.1rem 0 0.7rem 0;
+  gap: 0.5rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-content h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #b9b9b9;
+  margin-top: 0.5rem;
+}
+
+.typing {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #b9b9b9;
+  margin-top: 0.5rem;
+  min-height: 2.2em;
+  letter-spacing: 0.5px;
+  width: 420px;
+  max-width: 90vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.typing-text {
+  border-right: 2px solid #a259ff;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink-cursor 0.8s steps(1) infinite;
+  text-align: center;
+  min-width: 0;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { border-color: #a259ff; }
+  50% { border-color: transparent; }
+}
+
+
+@media (max-width: 700px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+}

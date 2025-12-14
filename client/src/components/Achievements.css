@@ -1,0 +1,34 @@
+.achievements {
+  background: #181818;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px #00000022;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.achievement-item {
+  background: #222;
+  border-radius: 16px;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 2px 8px #00000022;
+}
+
+.achievement-item h3 {
+  color: #a259ff;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-item p {
+  color: #fff;
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+}

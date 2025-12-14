@@ -1,0 +1,124 @@
+.about {
+  background: #181818;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px #00000022;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  scroll-behavior: smooth;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.about-left {
+  flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.about-right {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  gap: 1.2rem;
+  min-width: 0;
+  padding-right: 10rem;
+}
+
+.about-points {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.about-points li {
+  font-size: 1.12rem;
+  color: #b9b9b9;
+  line-height: 1.6;
+  margin-left: 1.5rem;
+  position: relative;
+  padding-left: 0;
+}
+.about-points li::before {
+  content: "•";
+  position: absolute;
+  left: -1.5rem;
+  color: #a259ff;
+  font-weight: bold;
+}
+
+.about-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #2196f3;
+  object-fit: cover;
+  background: #222;
+}
+
+.about-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #a259ff;
+  object-fit: cover;
+  background: #222;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  color: #a259ff;
+  margin-bottom: 0.5rem;
+}
+
+.about-text p {
+  color: #b9b9b9;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.about-social a {
+  color: #a259ff;
+  font-weight: 500;
+  font-size: 2.1rem;
+  transition: color 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-social a:hover {
+  color: #fff;
+  transform: scale(1.15);
+}
+
+@media (max-width: 700px) {
+  .about-content {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  .about-img img {
+    width: 110px;
+    height: 110px;
+  }
+}
