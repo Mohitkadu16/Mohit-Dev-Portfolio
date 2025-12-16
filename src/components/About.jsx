@@ -8,7 +8,7 @@ const About = () => (
       <div className="about-left">
         <h2>About Me</h2>
         <div className="about-img">
-          <img src="/public/Images/github-pfp.png" alt="Profile" />
+          <img src="/public/Images/github-pfp.webp" alt="Profile" />
         </div>
         <div className="about-social">
           <a href="https://www.linkedin.com/in/mohit-kadu-856410243/" title="LinkedIn"><FaLinkedin /></a>

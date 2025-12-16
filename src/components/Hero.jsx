@@ -46,7 +46,7 @@ const Hero = ({ isDarkMode }) => {
   return (
     <section className="hero" id="hero">
       <div className="hero-content">
-        <img src="/public/Images/hero img.png" alt="Hero" className="hero-img" style={{width: '160px', height: '160px', borderRadius: '50%', marginBottom: '1.5rem', border: '5px solid #2196f3', background: '#181818'}} />
+        <img src="/public/Images/hero img.webp" alt="Hero" className="hero-img" style={{width: '160px', height: '160px', borderRadius: '50%', marginBottom: '1.5rem', border: '5px solid #2196f3', background: '#181818'}} />
   <h1 className="hero-title">Mohit <span className="hero-gradient">Kadu</span></h1>
         <h2 className="typing">
           <span className="typing-text">{display}</span>

@@ -7,7 +7,7 @@ const Projects = () => (
     <div className="projects-list">
       <div className="project-item">
         <div className="project-image">
-          <img src="/public/projects/studkits.png" alt="Studkits" />
+          <img src="/public/projects/studkits.webp" alt="Studkits" />
         </div>
         <div className="project-content">
           <h3>StudKits - IoT, Robotics & Electronics Project Kits</h3>
@@ -20,7 +20,7 @@ const Projects = () => (
       </div>
       <div className="project-item">
         <div className="project-image">
-          <img src="/public/projects/aethersurf.png" alt="Attendance System" />
+          <img src="/public/projects/aethersurf.webp" alt="Attendance System" />
         </div>
         <div className="project-content">
           <h3>AetherSurf - AI-Powered Browser Prototype</h3>
@@ -33,7 +33,7 @@ const Projects = () => (
       </div>
       <div className="project-item">
         <div className="project-image">
-          <img src="/public/projects/taskwise.png" alt="Attendance System" />
+          <img src="/public/projects/taskwise.webp" alt="Attendance System" />
         </div>
         <div className="project-content">
           <h3>TaskWise - AI-Powered Task Management & Evaluation</h3>
@@ -46,7 +46,7 @@ const Projects = () => (
       </div>
       <div className="project-item">
         <div className="project-image">
-          <img src="/public/projects/portfolio.png" alt="Portfolio & IoT" />
+          <img src="/public/projects/portfolio.webp" alt="Portfolio & IoT" />
         </div>
         <div className="project-content">
           <h3>Personal Portfolio Website & IoT Projects</h3>
