@@ -20,11 +20,34 @@
 }
 
 .footer-social a {
-  color: #a259ff;
+  color: #8739d0;
   font-weight: 500;
   font-size: 1.1rem;
-  transition: color 0.2s;
+  transition: color 0.2s, filter 0.2s;
+  filter: drop-shadow(0 0 8px rgba(162, 89, 255, 0.4));
 }
 .footer-social a:hover {
   color: #fff;
+  filter: drop-shadow(0 0 15px rgba(162, 89, 255, 0.8));
+}
+
+/* Light mode styles */
+.light-theme .footer {
+  background: #ffffff;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .footer-content {
+  color: #333;
+}
+
+.light-theme .footer-social a {
+  color: #8739d0;
+  filter: drop-shadow(0 0 10px rgba(162, 89, 255, 0.5));
+}
+
+.light-theme .footer-social a:hover {
+  color: #8800ff;
+  filter: drop-shadow(0 0 15px rgba(162, 89, 255, 0.8));
 }

@@ -13,7 +13,7 @@ const TYPING_SPEED = 70;
 const ERASING_SPEED = 50;
 const DELAY_BETWEEN = 1200;
 
-const Hero = () => {
+const Hero = ({ isDarkMode }) => {
   const [current, setCurrent] = useState(0);
   const [display, setDisplay] = useState("");
   const [typing, setTyping] = useState(true);
@@ -56,7 +56,7 @@ const Hero = () => {
           <span>Mumbai, Maharashtra, India</span>
         </div>
         <a href="#" className="btn-primary" id="about">
-          <FaDownload style={{marginRight: '10px', fontSize: '1.2em', verticalAlign: 'middle'}} />
+          <FaDownload style={{marginRight: '10px', fontSize: '1.2em', verticalAlign: 'middle', color: isDarkMode ? 'white' : 'black'}} />
           Download Resume
         </a>
       </div>

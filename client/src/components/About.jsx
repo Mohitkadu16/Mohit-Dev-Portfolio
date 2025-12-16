@@ -11,9 +11,9 @@ const About = () => (
           <img src="/public/github-pfp.png" alt="Profile" />
         </div>
         <div className="about-social">
-          <a href="#" title="LinkedIn"><FaLinkedin /></a>
-          <a href="#" title="GitHub"><FaGithub /></a>
-          <a href="#" title="Email"><FaEnvelope /></a>
+          <a href="https://www.linkedin.com/in/mohit-kadu-856410243/" title="LinkedIn"><FaLinkedin /></a>
+          <a href="https://github.com/mohitkadu16" title="GitHub"><FaGithub /></a>
+          <a href="mailto:mohitkadu13@gmail.com" title="Email"><FaEnvelope /></a>
         </div>
       </div>
       <div className="about-right">

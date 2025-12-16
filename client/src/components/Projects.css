@@ -11,34 +11,38 @@
 .projects h2 {
   color: #fff;
   font-size: 1.8rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .projects-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  margin: 0 1rem;
+  
 }
 
 .project-item {
   background: #222;
   border-radius: 16px;
+    border: 2px solid rgba(135, 57, 208, 0.3);
   overflow: hidden;
-  box-shadow: 0 2px 8px #00000022;
+  box-shadow: 0 2px 8px #00000022, inset 0 0 20px rgba(135, 57, 208, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
 }
 
 .project-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px #00000044;
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(135, 57, 208, 0.3);
 }
 
 .project-image {
   width: 100%;
   height: 200px;
-  background: linear-gradient(135deg, #a259ff22, #2196f322);
+  background: linear-gradient(135deg, #8739d022, #2196f322);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -59,7 +63,7 @@
 }
 
 .project-item h3 {
-  color: #a259ff;
+  color: #8739d0;
   font-size: 1.2rem;
   margin: 0 0 0.8rem 0;
   line-height: 1.4;
@@ -88,9 +92,9 @@
 
 .btn-secondary {
   align-self: flex-start;
-  background: rgba(162, 89, 255, 0.1);
-  border: 1px solid #a259ff;
-  color: #a259ff;
+  background: rgba(135, 57, 208, 0.1);
+  border: 1px solid #8739d0;
+  color: #8739d0;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   text-decoration: none;
@@ -100,7 +104,54 @@
 }
 
 .btn-secondary:hover {
-  background: #a259ff;
+  background: #8739d0;
+  color: #fff;
+}
+
+/* Light mode styles */
+.light-theme .projects {
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .projects h2 {
+  color: #1a1a1a;
+}
+
+.light-theme .project-item {
+  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), inset 0 0 20px rgba(135, 57, 208, 0.1);
+}
+
+.light-theme .project-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgb(135, 57, 208);
+}
+
+.light-theme .project-image {
+  background: linear-gradient(135deg, #8739d011, #2196f311);
+}
+
+.light-theme .project-item h3 {
+  color: #8739d0;
+}
+
+.light-theme .project-item ul {
+  color: #555;
+}
+
+.light-theme .tech-stack {
+  color: #999;
+}
+
+.light-theme .btn-secondary {
+  background: rgba(135, 57, 208, 0.1);
+  border-color: #8739d0;
+  color: #8739d0;
+}
+
+.light-theme .btn-secondary:hover {
+  background: #8739d0;
   color: #fff;
 }
 

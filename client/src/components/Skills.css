@@ -24,7 +24,7 @@
 
 .skills-icon {
   font-size: 1.5rem;
-  color: #a259ff;
+  color: #8739d0;
 }
 
 .skills-header h2 {
@@ -42,7 +42,7 @@
 
 .skill-tag {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(162, 89, 255, 0.3);
+  border: 1px solid rgba(135, 57, 208, 0.3);
   border-radius: 12px;
   padding: 1rem;
   color: #b9b9b9;
@@ -59,34 +59,41 @@
 
 .skill-logo {
   font-size: 2.5rem;
-  color: #a259ff;
+  color: #8739d0;
   transition: all 0.3s ease;
-  filter: drop-shadow(0 0 8px rgba(162, 89, 255, 0.3));
+  filter: drop-shadow(0 0 12px rgba(135, 57, 208, 0.6));
 }
 
 .skill-logo-svg {
   width: 2.5rem;
   height: 2.5rem;
   transition: all 0.3s ease;
-  filter: drop-shadow(0 0 8px rgba(162, 89, 255, 0.3));
+  filter: drop-shadow(0 0 12px rgba(135, 57, 208, 0.6));
+  color: #8739d0;
 }
 
 .skill-tag:hover .skill-logo {
   font-size: 3rem;
   color: #fff;
   transform: scale(1.1);
-  filter: drop-shadow(0 0 12px rgba(162, 89, 255, 0.6));
+  filter: drop-shadow(0 0 20px rgba(135, 57, 208, 0.9));
 }
 
 .skill-tag:hover .skill-logo-svg {
   width: 3rem;
   height: 3rem;
-  filter: drop-shadow(0 0 12px rgba(162, 89, 255, 0.6));
+  filter: drop-shadow(0 0 20px rgba(135, 57, 208, 0.9)) brightness(0) invert(1);
+}
+
+.skill-tag:hover .skill-logo-svg {
+  width: 3rem;
+  height: 3rem;
+  filter: drop-shadow(0 0 20px rgba(135, 57, 208, 0.9));
 }
 
 .skill-tag:hover {
-  background: rgba(162, 89, 255, 0.1);
-  border-color: #a259ff;
+  background: rgba(135, 57, 208, 0.1);
+  border-color: #8739d0;
   color: #fff;
   transform: translateY(-3px);
 }
@@ -95,6 +102,55 @@
   font-size: 3rem;
   color: #fff;
   transform: scale(1.1);
+}
+
+/* Light mode styles */
+.light-theme .skills {
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .skills-icon {
+  color: #8739d0;
+}
+
+.light-theme .skills-header h2 {
+  color: #1a1a1a;
+}
+
+.light-theme .skill-tag {
+  background: rgba(135, 57, 208, 0.05);
+  border-color: rgba(135, 57, 208, 0.2);
+  color: #555;
+}
+
+.light-theme .skill-logo {
+  color: #8739d0;
+  filter: drop-shadow(0 0 12px rgba(135, 57, 208, 0.6));
+}
+
+.light-theme .skill-logo-svg {
+  color: #8739d0;
+  filter: drop-shadow(0 0 12px rgb(135, 57, 208));
+}
+
+.light-theme .skill-tag:hover {
+  background: rgb(37, 0, 72);
+  border-color: #8739d0;
+  color: #1a1a1a;
+}
+
+.light-theme .skill-tag:hover .skill-logo {
+  color: #8739d0;
+  filter: drop-shadow(0 0 20px rgba(135, 57, 208, 0.8));
+}
+
+.light-theme .skill-tag:hover .skill-logo-svg {
+  filter: drop-shadow(0 0 20px rgba(135, 57, 208, 0.8)) brightness(0) invert(1);
+}
+
+.light-theme .skill-tag:hover .skill-logo-svg {
+  filter: drop-shadow(0 0 20px rgba(135, 57, 208, 0.8));
 }
 
 @media (max-width: 700px) {

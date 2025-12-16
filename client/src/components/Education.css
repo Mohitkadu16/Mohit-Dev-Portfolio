@@ -7,22 +7,208 @@
   margin-left: 2rem;
   margin-right: 2rem;
 }
+@media (max-width: 420px) {
+  .timeline-content::before { left: -22px; width: 4px; height: 56%; top: 22%; }
+}
+
+.education h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
 .education-list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Timeline styles */
+.timeline {
+  position: relative;
+  padding-left: 96px; /* space for the timeline */
+  /* more top spacing so lifted badges don't overlap the section heading */
+  padding-top: 2rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 48px; /* center of the timeline */
+  top: 24px;
+  bottom: 24px;
+  width: 3px;
+  /* make the base line very subtle so the card accent stripe reads as the primary accent */
+  background: linear-gradient(180deg, rgba(135,57,208,0.08), rgba(135,57,208,0.03));
+  border-radius: 3px;
+  z-index: 0;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 1rem;
+  /* allow items to grow vertically so cards expand to fit content */
+  align-items: stretch;
+  position: relative;
+}
+.timeline-item::before { display:none }
+
+
+.timeline-badge {
+  position: absolute;
+  left: -12px; /* position it relative to the content box (slightly left) */
+  top: -18px; /* lift the badge above the card header so it sits above the title */
+  background: rgba(135,57,208,0.22);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  backdrop-filter: blur(4px);
+    border: 1px solid #8739d0; /* Use primary purple border */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  z-index: 5;
+}
+
+.timeline-content {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  padding: 1.6rem 1.6rem 2.2rem; /* extra bottom space so chips and long text fit */
+  border-radius: 14px;
+  box-shadow: 0 14px 36px rgba(0,0,0,0.65);
+  border: 1px solid rgba(255,255,255,0.05);
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-height: 120px; /* ensures a reasonable base height but can grow */
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  z-index: 3;
+  position: relative;
+}
+
+/* hide the small node (dot) — removed per design request */
+.timeline-content::after {
+  display: none !important;
+}
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  /* stronger, cleaner accent for inside the card */
+  background: linear-gradient(180deg, rgba(135,57,208,0.95), rgba(135,57,208,0.7));
+  border-radius: 3px;
+  opacity: 0.98;
+  box-shadow: 0 6px 16px rgba(135,57,208,0.12);
+  z-index: 2;
+}
+
+.timeline-content::after { content: ''; display: none }
+.timeline-head {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.grad-icon {
+  color: #fff;
+  background: linear-gradient(90deg,#6a5cff,#8739d0);
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.timeline-sub { color: #b9b9b9; margin-top: 6px; font-size: 0.95rem }
+
+.timeline-content p { margin-top: 10px; color: #ddd; line-height: 1.5 }
+
+.timeline-tags { margin-top: 12px; display:flex; gap:0.5rem; flex-wrap:wrap }
+.chip {
+  background: rgba(135,57,208,0.08);
+  color: #cfc7ff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  border: 1px solid #8739d0;
+}
+
+.timeline-content:hover { transform: translateY(-6px); box-shadow: 0 18px 30px rgba(0,0,0,0.65) }
+
+@media (min-width: 900px) {
+  .timeline-content { padding: 1.8rem 1.8rem }
+}
+
+/* Light mode adjustments */
+.light-theme .timeline-badge { background: rgba(135,57,208,0.06); color: #444; border-color: #8739d0 }
+.light-theme .timeline-content { background: #fff; color: #222; border-color: #8739d0 }
+.light-theme .chip { background: rgba(135,57,208,0.06); color: #333; border-color: #8739d0 } /* Ensure chip border-color in light-mode is #8739d0 */
+
+@media (max-width: 700px) {
+  /* mobile: simplify timeline and move badges into card flow */
+  .timeline { padding-left: 12px }
+  .timeline::before { display: none }
+  .timeline-content::after { left: -30px; top: -3px }
+  /* place the badge inside the card flow on mobile so it doesn't overlap the section heading */
+  .timeline-badge {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 0.6rem 0;
+  font-size: 0.78rem;
+  padding: 6px 10px;
+  border: 1px solid #8739d0;
+  }
+  .timeline-content { padding: 0.9rem 1rem }
+  .timeline-content { padding-left: 1rem; padding-right: 1rem; border-radius: 12px; box-shadow: 0 8px 18px rgba(0,0,0,0.5); min-height: auto }
+  /* reduce clutter on smaller screens by hiding the inner stripe accent */
+  .timeline-content::before { display: none }
+  .timeline-content { min-height: 140px } /* give mobile cards extra room by default */
+  .grad-icon { padding: 4px; font-size: 0.9rem }
+  .chip { padding: 5px 8px; font-size: 0.78rem }
+}
+
+@media (max-width: 420px) {
+  .education { padding: 1rem }
+  .timeline-badge { font-size: 0.75rem; padding: 5px 10px }
+  .grad-icon { padding: 3px; font-size: 0.8rem }
+  .timeline-content p { font-size: 0.95rem }
+  .timeline-tags { gap: 0.4rem }
 }
 
 .education-item {
   background: #222;
   border-radius: 16px;
+    border: 2px solid rgba(135, 57, 208, 0.3);
   padding: 1.2rem 2rem;
-  box-shadow: 0 2px 8px #00000022;
+  box-shadow: 0 2px 8px #00000022, inset 0 0 20px rgba(135, 57, 208, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+  overflow: visible; /* allow expanded content and badges not to be clipped */
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+.education-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(135, 57, 208, 0.3);
+  border: 1px solid rgba(135, 57, 208, 0.3);
 }
 
 .education-item h3 {
-  color: #a259ff;
+  color: #8739d0;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
@@ -36,4 +222,62 @@
   color: #fff;
   font-size: 1.05rem;
   margin-top: 0.5rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .education-list {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    gap: 1rem;
+  }
+
+  .education-item {
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+  }
+
+  .education-item h3 {
+    font-size: 1.05rem;
+  }
+
+  .education-item p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Light mode styles */
+.light-theme .education {
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .education-item {
+  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), inset 0 0 20px rgba(135, 57, 208, 0.1);
+}
+
+.light-theme .education-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgb(135, 57, 208);
+  border: 1px solid rgba(135, 57, 208, 0.3);
+}
+
+.light-theme .education-item h3 {
+  color: #8739d0;
+}
+
+.light-theme .education-item span {
+  color: #555;
+}
+
+.light-theme .timeline-badge {
+  background: rgba(135,57,208,0.06);
+  color: #444;
+  border-color: #8739d0;
+}
+
+.light-theme .education-item p {
+  color: #333;
 }

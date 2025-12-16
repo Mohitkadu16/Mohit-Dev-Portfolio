@@ -1,40 +1,172 @@
 .experience {
-  background: #181818;
-  border-radius: 20px;
-  box-shadow: 0 2px 16px #00000022;
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  background: #0f0f12;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  padding: 2.2rem 1.2rem;
+  margin: 1.4rem 1.2rem 2rem 1.2rem;
+  border: 1px solid rgba(255,255,255,0.02);
+  position: relative; /* for the timeline line */
+  padding-left: 96px; /* space for the left timeline */
+  padding-top: 2rem; /* avoid overlap with section title when badges are lifted */
+}
+
+/* vertical timeline line */
+.experience::before {
+  content: '';
+  position: absolute;
+  left: 48px;
+  top: 24px;
+  bottom: 24px;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(135,57,208,0.08), rgba(135,57,208,0.03));
+  border-radius: 3px;
+  z-index: 0;
+}
+
+.experience h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.25rem;
+  margin: 0 0.6rem;
 }
 
 .experience-item {
-  background: #222;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.03));
   border-radius: 16px;
-  padding: 1.2rem 2rem;
-  box-shadow: 0 2px 8px #00000022;
+  border: 1px solid rgba(255,255,255,0.03);
+  padding: 1.8rem 1.6rem 1.2rem 1.6rem;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  position: relative;
+  overflow: visible;
+  box-sizing: border-box;
+  min-height: 110px; /* base height so items line up nicely and can grow */
 }
 
-.experience-item h3 {
-  color: #a259ff;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+/* small node beside the badge */
+.experience-item::before {
+  /* removed small node (dot) — design requested */
+  display: none;
 }
 
-.experience-item span {
-  color: #b9b9b9;
+/* inner accent stripe that spans card height */
+.experience-item::after {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(135,57,208,0.95), rgba(135,57,208,0.7));
+  border-radius: 3px;
+  box-shadow: 0 6px 16px rgba(135,57,208,0.12);
+  z-index: 2;
+}
+
+.experience-item:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 34px 70px rgba(135, 57, 208, 0.14);
+  border-color: rgba(135, 57, 208, 0.18);
+}
+
+.exp-badge {
+  position: absolute;
+  /* place the badge into the blank rectangle area to the left of the line */
+  left: -10px;
+  top: -6px;
+  background: rgba(135,57,208,0.22);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(135,57,208,0.18);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+  z-index: 5;
+}
+
+.exp-head { display:flex; gap:0.9rem; align-items:center }
+
+.exp-icon {
+  background: linear-gradient(90deg,#6a5cff,#8739d0);
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
   font-size: 1rem;
 }
 
-.experience-item ul {
-  color: #fff;
-  font-size: 1.05rem;
-  margin-top: 0.5rem;
-  padding-left: 1.2rem;
+.exp-title h3 { color: #fff; font-size: 1.05rem; margin:0; font-weight:800 }
+.exp-org a { color: #d7c7ff; text-decoration:none; font-weight:600 }
+
+.experience-item ul { margin-top: 0.8rem; color: #cfc9d8; line-height: 1.6 }
+
+.experience-item li { margin-bottom: 0.45rem }
+
+
+
+.light-theme .experience-item ul { color: #333 }
+
+@media (max-width: 700px) {
+  .experience { padding: 1.2rem 1rem }
+  /* put badge inside card flow on mobile so it doesn't overlap the heading */
+  .exp-badge {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 0.6rem 0;
+    font-size: 0.78rem;
+    padding: 6px 10px;
+  }
+  .experience { padding-left: 56px }
+  .experience::before { left: 28px }
+  .experience-item::before { left: 12px; top: 4px }
+  .experience-item::after { display: none }
+  .exp-icon { padding:6px }
+}
+
+/* Light mode styles */
+.light-theme .experience {
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .experience-item {
+  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), inset 0 0 20px rgba(135, 57, 208, 0.1);
+}
+
+.light-theme .exp-badge { background: rgba(135,57,208,0.06); color: #444; border-color: #8739d0 }
+.light-theme .experience::before { background: linear-gradient(180deg, rgba(135,57,208,0.06), rgba(135,57,208,0.03)) }
+.light-theme .experience-item::after { background: linear-gradient(180deg, rgba(135,57,208,0.4), rgba(135,57,208,0.24)) }
+
+.light-theme .experience-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgb(135, 57, 208);
+  border: 1px solid #8739d0;
+}
+
+.light-theme .experience-item h3 {
+  color: #8739d0;
+}
+
+.light-theme .experience-item span {
+  color: #8739d0;
+}
+
+.light-theme .experience-item span a {
+  color: #8739d0;
+  text-decoration:none;
+}
+
+.light-theme .experience-item ul {
+  color: #333;
 }

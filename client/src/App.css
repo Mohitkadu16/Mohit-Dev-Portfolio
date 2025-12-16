@@ -15,7 +15,7 @@ body, html {
   min-height: 100vh;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  width: auto;
+  width: 100%;
 }
 
 .app.dark-theme {
@@ -24,6 +24,146 @@ body, html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+}
+
+.app.light-theme {
+  background: #f5f5f5;
+  color: #333;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.light-theme body, 
+.light-theme html {
+  background: #f5f5f5;
+  color: #1a1a1a;
+}
+
+.light-theme section {
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .hero {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.light-theme h1,
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5,
+.light-theme h6 {
+  color: #1a1a1a !important;
+}
+
+.light-theme p,
+.light-theme span,
+.light-theme div,
+.light-theme li,
+.light-theme a {
+  color: #333 !important;
+}
+
+.light-theme .navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1.5px solid #8739d0 !important;
+}
+
+.light-theme .nav-links li a {
+  color: #333 !important;
+}
+
+.light-theme .nav-links li a:hover {
+  color: #8800ff !important;
+  box-shadow: 0 0 30px 12px rgba(69, 0, 196, 0.2) !important;
+}
+
+.light-theme .btn-primary {
+  box-shadow: 0 2px 8px rgba(135, 57, 208, 0.2);
+}
+
+.light-theme .btn-secondary {
+  background: #fff;
+  border-color: #a259ff;
+  color: #a259ff !important;
+}
+
+.light-theme .btn-secondary:hover {
+  background: #a259ff;
+  color: #fff !important;
+}
+
+/* Light mode for header logo styling */
+.light-theme .logo img {
+  background: #f5f5f5 !important;
+  box-shadow: 0 0 0 4px #f5f5f5 !important;
+}
+
+/* Light theme text colors for all components */
+.light-theme .about-text,
+.light-theme .skills-text,
+.light-theme .education-text,
+.light-theme .experience-text,
+.light-theme .projects-text,
+.light-theme .achievements-text,
+.light-theme .contact-text,
+.light-theme .footer-text {
+  color: #333 !important;
+}
+
+/* Cards and boxes */
+.light-theme .card,
+.light-theme .project-card,
+.light-theme .skill-item,
+.light-theme .education-item,
+.light-theme .experience-item {
+  background: #fafafa !important;
+  color: #333 !important;
+  border-color: #8739d0 !important;
+}
+
+/* Ensure other common component borders use the primary purple in light mode */
+.light-theme .timeline-content,
+.light-theme .timeline-badge,
+.light-theme .exp-badge,
+.light-theme .achievement-item,
+.light-theme .project-item,
+.light-theme .contact,
+.light-theme .footer,
+.light-theme input,
+.light-theme textarea,
+.light-theme .card,
+.light-theme .project-card,
+.light-theme .skill-item,
+.light-theme .skill-tag,
+.light-theme .stat-card,
+.light-theme .education-item,
+.light-theme .experience-item {
+  border-color: #8739d0 !important;
+}
+
+/* Icons in light mode */
+.light-theme svg {
+  color: #8739d0 !important;
+}
+
+.light-theme .btn-primary svg {
+  color: black !important;
+}
+
+.light-theme .theme-toggle svg {
+  color: black !important;
+}
+
+.light-theme .social-icons a:hover svg {
+  color: black !important;
+}
+
+.light-theme .accent {
+  color: #8739d0 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,7 +217,7 @@ a:hover {
 }
   will-change: filter;
 .accent {
-  color: #a259ff;
+  color: #8739d0;
 }
   transition: filter 300ms;
 section {
@@ -130,3 +270,277 @@ section {
 .read-the-docs {
   color: #888;
 }
+
+/* ============================================
+   COMPREHENSIVE LIGHT THEME STYLES
+   ============================================ */
+
+/* Skills Component */
+.light-theme .skills {
+  background: #ffffff;
+}
+
+.light-theme .skills h2,
+.light-theme .skills h3 {
+  color: #1a1a1a !important;
+}
+
+.light-theme .skill-category {
+  background: #f9f9f9 !important;
+}
+
+.light-theme .skill-item,
+.light-theme .skill-tag {
+  background: #f0f0f0 !important;
+  color: #333 !important;
+  border-color: #e0e0e0 !important;
+}
+
+.light-theme .skill-item:hover,
+.light-theme .skill-tag:hover {
+  background: #e8e8e8 !important;
+  color: #1a1a1a !important;
+}
+
+/* Education Component */
+.light-theme .education {
+  background: #ffffff;
+}
+
+.light-theme .education-item {
+  background: #f9f9f9 !important;
+  border-color: #e0e0e0 !important;
+}
+
+.light-theme .education-item h3,
+.light-theme .education-item h4 {
+  color: #1a1a1a !important;
+}
+
+.light-theme .education-item p,
+.light-theme .education-item span {
+  color: #555 !important;
+}
+
+/* Experience Component */
+.light-theme .experience {
+  background: #ffffff;
+}
+
+.light-theme .experience-item {
+  background: #f9f9f9 !important;
+  border-color: #e0e0e0 !important;
+}
+
+.light-theme .experience-item h3,
+.light-theme .experience-item h4 {
+  color: #1a1a1a !important;
+}
+
+.light-theme .experience-item p,
+.light-theme .experience-item span {
+  color: #555 !important;
+}
+
+/* Projects Component */
+.light-theme .projects {
+  background: #ffffff;
+}
+
+.light-theme .project-card {
+  background: #f9f9f9 !important;
+  border-color: #e0e0e0 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.light-theme .project-card h3,
+.light-theme .project-card h4 {
+  color: #1a1a1a !important;
+}
+
+.light-theme .project-card p,
+.light-theme .project-card span {
+  color: #555 !important;
+}
+
+.light-theme .project-card a {
+  color: #a259ff !important;
+}
+
+.light-theme .project-card a:hover {
+  color: #8800ff !important;
+}
+
+/* Achievements Component */
+.light-theme .achievements {
+  background: #ffffff;
+}
+
+.light-theme .achievement-item {
+  background: #f9f9f9 !important;
+  border-color: #e0e0e0 !important;
+}
+
+.light-theme .achievement-item h3,
+.light-theme .achievement-item h4 {
+  color: #1a1a1a !important;
+}
+
+.light-theme .achievement-item p,
+.light-theme .achievement-item span {
+  color: #555 !important;
+}
+
+/* Contact Component */
+.light-theme .contact {
+  background: #ffffff;
+}
+
+.light-theme .contact h2,
+.light-theme .contact h3 {
+  color: #1a1a1a !important;
+}
+
+.light-theme .contact p,
+.light-theme .contact label,
+.light-theme .contact span {
+  color: #333 !important;
+}
+
+.light-theme input,
+.light-theme textarea,
+.light-theme select {
+  background: #f5f5f5 !important;
+  color: #333 !important;
+  border-color: #ddd !important;
+}
+
+.light-theme input:focus,
+.light-theme textarea:focus,
+.light-theme select:focus {
+  background: #ffffff !important;
+  border-color: #a259ff !important;
+  box-shadow: 0 0 0 3px rgba(135, 57, 208, 0.1) !important;
+}
+
+.light-theme .contact-links {
+  background: #f9f9f9 !important;
+}
+
+.light-theme .contact-link {
+  background: #f0f0f0 !important;
+  border-color: #e0e0e0 !important;
+}
+
+.light-theme .contact-link a {
+  color: #333 !important;
+}
+
+.light-theme .contact-link a:hover {
+  color: #a259ff !important;
+}
+
+/* Footer Component */
+.light-theme .footer {
+  background: #ffffff;
+  border-top: 1px solid #e0e0e0;
+}
+
+.light-theme .footer h3,
+.light-theme .footer h4,
+.light-theme .footer p {
+  color: #333 !important;
+}
+
+.light-theme .footer a {
+  color: #a259ff !important;
+}
+
+.light-theme .footer a:hover {
+  color: #8800ff !important;
+}
+
+.light-theme .footer-links li a {
+  color: #555 !important;
+}
+
+.light-theme .footer-links li a:hover {
+  color: #a259ff !important;
+}
+
+/* Stats Component */
+.light-theme .stats {
+  background: #ffffff;
+}
+
+.light-theme .stat-item {
+  background: #f9f9f9 !important;
+  border-color: #e0e0e0 !important;
+}
+
+.light-theme .stat-item h3,
+.light-theme .stat-item p {
+  color: #1a1a1a !important;
+}
+
+/* General light theme text colors */
+.light-theme {
+  color: #333 !important;
+}
+
+.light-theme p {
+  color: #555 !important;
+}
+
+.light-theme small,
+.light-theme .text-muted,
+.light-theme .muted {
+  color: #999 !important;
+}
+
+.light-theme strong,
+.light-theme b {
+  color: #1a1a1a !important;
+}
+
+/* Borders and dividers in light mode */
+.light-theme hr,
+.light-theme .divider {
+  border-color: #e0e0e0 !important;
+  background: #e0e0e0 !important;
+}
+
+/* Links in light mode */
+.light-theme a:not([class*="btn"]):not([class*="link"]) {
+  color: #333 !important;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.light-theme a:not([class*="btn"]):not([class*="link"]):hover {
+  color: #a259ff !important;
+}
+
+/* Mobile-specific header optimization */
+@media (max-width: 768px) {
+  .header {
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.3rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.2rem !important;
+    margin: 0 !important;
+  }
+  
+  .navbar {
+    padding: 0.3rem 0.5rem !important;
+    height: auto !important;
+    gap: 0.4rem !important;
+  }
+}
+
+

@@ -19,15 +19,24 @@
 .stat-card {
   background: #222;
   border-radius: 16px;
+    border: 2px solid rgba(135, 57, 208, 0.3);
   padding: 1.5rem 2.5rem;
   text-align: center;
   flex: 1 1 0;
   min-width: 120px;
-  box-shadow: 0 2px 8px #00000022;
+  box-shadow: 0 2px 8px #00000022, inset 0 0 20px rgba(135, 57, 208, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(135, 57, 208, 0.3), inset 0 0 20px rgba(135, 57, 208, 0.1);
+  border: 1px solid rgba(135, 57, 208, 0.3);
 }
 
 .stat-card h3 {
-  color: #a259ff;
+  color: #8739d0;
   font-size: 2.2rem;
   margin-bottom: 0.3rem;
 }
@@ -35,6 +44,32 @@
 .stat-card span {
   color: #b9b9b9;
   font-size: 1.1rem;
+}
+
+/* Light mode styles */
+.light-theme .stats {
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .stat-card {
+  background: #f9f9f9;
+    border: 2px solid rgba(135, 57, 208, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), inset 0 0 20px rgba(135, 57, 208, 0.1);
+}
+
+.light-theme .stat-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(135, 57, 208, 0.3), inset 0 0 20px rgba(135, 57, 208, 0.1);
+  border: 2px solid rgb(135, 57, 208);
+}
+
+.light-theme .stat-card h3 {
+  color: #8739d0;
+}
+
+.light-theme .stat-card span {
+  color: #555;
 }
 
 @media (max-width: 700px) {

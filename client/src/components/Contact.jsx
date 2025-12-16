@@ -119,15 +119,7 @@ const Contact = () => {
               <FaEnvelope className="contact-icon" />
               <div>
                 <h4>Email</h4>
-                <a href="mailto:mohitkadu@example.com">mohitkadu@example.com</a>
-              </div>
-            </div>
-
-            <div className="contact-info-item">
-              <FaPhone className="contact-icon" />
-              <div>
-                <h4>Phone</h4>
-                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href="mailto:mohitkadu13@gmail.com">mohitkadu13@gmail.com</a>
               </div>
             </div>
 
@@ -135,7 +127,7 @@ const Contact = () => {
               <FaLinkedin className="contact-icon" />
               <div>
                 <h4>LinkedIn</h4>
-                <a href="https://www.linkedin.com/in/mohitkadu" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohitkadu</a>
+                <a href="https://www.linkedin.com/in/mohit-kadu-856410243/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohit-kadu-856410243</a>
               </div>
             </div>
 
@@ -143,20 +135,20 @@ const Contact = () => {
               <FaGithub className="contact-icon" />
               <div>
                 <h4>GitHub</h4>
-                <a href="https://github.com/mohitkadu" target="_blank" rel="noopener noreferrer">github.com/mohitkadu</a>
+                <a href="https://github.com/mohitkadu16" target="_blank" rel="noopener noreferrer">github.com/mohitkadu16</a>
               </div>
             </div>
 
             <div className="social-links">
               <h3>Follow Me</h3>
               <div className="social-icons">
-                <a href="https://instagram.com/mohitkadu" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <a href="https://instagram.com/loyalmanuka" target="_blank" rel="noopener noreferrer" title="Instagram">
                   <FaInstagram />
                 </a>
-                <a href="https://reddit.com/user/mohitkadu" target="_blank" rel="noopener noreferrer" title="Reddit">
+                <a href="https://www.reddit.com/user/Fair-Department-7535/" target="_blank" rel="noopener noreferrer" title="Reddit">
                   <FaReddit />
                 </a>
-                <a href="https://discord.com/users/mohitkadu" target="_blank" rel="noopener noreferrer" title="Discord">
+                <a href="https://discord.com/users/943878350060027905" target="_blank" rel="noopener noreferrer" title="Discord">
                   <FaDiscord />
                 </a>
               </div>

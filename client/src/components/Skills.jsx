@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCode, FaServer, FaTools, FaPalette, FaBrain, FaGithub, FaMobileAlt } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiPython, SiHtml5, SiCss3, SiCplusplus, SiReact, SiNextdotjs, SiNodedotjs, SiNpm, SiGit, SiGithub, SiFirebase, SiSupabase, SiFigma, SiWordpress, SiGoogle, SiOllama } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiPython, SiHtml5, SiCss3, SiCplusplus, SiReact, SiNextdotjs, SiNodedotjs, SiNpm, SiGit, SiGithub, SiFirebase, SiSupabase, SiFigma, SiWordpress, SiGoogle, SiOllama, SiGithubcopilot } from "react-icons/si";
 import "./Skills.css";
 
 const SkillTag = ({ icon: Icon, label, svgSrc }) => (
@@ -48,7 +48,7 @@ const Skills = () => (
       <SkillTag icon={SiGoogle} label="AI integration" />
       <SkillTag icon={SiGoogle} label="Genkit" />
       <SkillTag icon={SiOllama} label="Ollama" />
-      <SkillTag svgSrc="/github-copilot.svg" label="Github Copilot" />
+      <SkillTag icon={SiGithubcopilot} label="Github Copilot" />
     </div>
 
     <div className="skills-header">

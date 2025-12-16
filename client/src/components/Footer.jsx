@@ -6,9 +6,9 @@ const Footer = () => (
     <div className="footer-content">
       <span>&copy; {new Date().getFullYear()} Mohit Kadu. All rights reserved.</span>
       <div className="footer-social">
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">Email</a>
+        <a href="https://www.linkedin.com/in/mohit-kadu-856410243/">LinkedIn</a>
+        <a href="https://github.com/mohitkadu16">GitHub</a>
+        <a href="mailto:mohitkadu13@gmail.com">Email</a>
       </div>
     </div>
   </footer>
