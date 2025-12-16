@@ -7,7 +7,7 @@ const Projects = () => (
     <div className="projects-list">
       <div className="project-item">
         <div className="project-image">
-          <img src="/public/projects/studkits.png" alt="TaxiWey" />
+          <img src="/public/projects/studkits.png" alt="Studkits" />
         </div>
         <div className="project-content">
           <h3>StudKits - IoT, Robotics & Electronics Project Kits</h3>
