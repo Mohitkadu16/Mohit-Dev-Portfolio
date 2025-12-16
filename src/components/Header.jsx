@@ -18,7 +18,7 @@ const Header = ({ isDarkMode, toggleTheme }) => {
     <header className="header">
       <nav className="navbar">
         <div className="logo" style={{cursor: 'pointer', display: 'flex', alignItems: 'center'}} onClick={(e) => handleSmoothScroll(e, '#hero')}>
-          <img src="./public/Images/github-pfp.webp" alt="Logo" style={{width: '60px', height: '60px', borderRadius: '50%', background: isDarkMode ? '#181818' : '#f5f5f5', boxShadow: '0 0 12px rgba(135, 57, 208, 0.4)'}} />
+          <img src="/Images/github-pfp.webp" alt="Logo" style={{width: '60px', height: '60px', borderRadius: '50%', background: isDarkMode ? '#181818' : '#f5f5f5', boxShadow: '0 0 12px rgba(135, 57, 208, 0.4)'}} />
         </div>
         
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
