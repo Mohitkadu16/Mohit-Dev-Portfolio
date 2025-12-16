@@ -55,7 +55,7 @@ const Hero = ({ isDarkMode }) => {
           <FaMapMarkerAlt style={{marginRight: '8px', color: '#b9b9b9', fontSize: '1.1em', verticalAlign: 'middle'}} />
           <span>Mumbai, Maharashtra, India</span>
         </div>
-        <a href="/public/Documents/Mohit Kadu ATS Resume.pdf" className="btn-primary" id="about">
+        <a href="/Documents/Mohit Kadu ATS Resume.pdf" className="btn-primary" id="about">
           <FaDownload style={{marginRight: '10px', fontSize: '1.2em', verticalAlign: 'middle', color: isDarkMode ? 'white' : 'black'}} />
           Download Resume
         </a>
