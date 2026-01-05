@@ -19,7 +19,7 @@ const About = () => (
       <div className="about-right">
         <h3>Hey! I'm MOHIT</h3>
         <ul className="about-points">
-          <li>Results-driven and motivated Junior Developer currently pursuing a Diploma in Electronics & Telecommunication Engineering.</li>
+          <li>Results-driven and motivated Junior Developer with a Diploma in Electronics & Telecommunication Engineering</li>
           <li>Passionate about building scalable web applications and always eager to learn new technologies.</li>
           <li>Experienced in React, Node.js, and modern web development tools.</li>
           <li>Strong problem-solving skills and a collaborative team player.</li>

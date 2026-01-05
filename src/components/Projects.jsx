@@ -12,7 +12,7 @@ const Projects = () => (
         <div className="project-content">
           <h3>StudKits - IoT, Robotics & Electronics Project Kits</h3>
           <ul>
-            <li>Co-founded StudKits, an educational startup providing affordable IoT, robotics, and electronics project kits for students and hobbyists.</li>
+            <li>Developed & Co-founded StudKits, an educational startup providing affordable IoT, robotics, and electronics project kits for students and hobbyists.</li>
           </ul>
           <span className="tech-stack">Typescript, React, Node.js, Next.js, Firebase</span>
           <a href="https://www.studkits.shop" className="btn-secondary">View Project</a>
