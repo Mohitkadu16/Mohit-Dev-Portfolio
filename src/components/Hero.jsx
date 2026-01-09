@@ -4,9 +4,9 @@ import "./Hero.css";
 
 
 const statements = [
-  "Web Developer | Ai-Assisted Coder | React & TypeScript",
-  "2+ Years Experience",
-  "4+ Projects Completed",
+  "Web Developer | React | Next.js",
+  "2+ Years of Hands-On Project Experience",
+  "AI-Assisted Development | 4+ Deployed Projects",
 ];
 
 const TYPING_SPEED = 70;
