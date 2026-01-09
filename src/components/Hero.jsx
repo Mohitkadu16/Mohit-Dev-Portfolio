@@ -6,7 +6,7 @@ import "./Hero.css";
 const statements = [
   "Web Developer | React | Next.js",
   "2+ Years of Hands-On Project Experience",
-  "AI-Assisted Development | 4+ Deployed Projects",
+  "AI-Assisted Dev | 4+ Projects",
 ];
 
 const TYPING_SPEED = 70;
