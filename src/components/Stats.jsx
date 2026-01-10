@@ -14,7 +14,7 @@ const Stats = () => (
       </div>
       <div className="stat-card" id="skills">
         <h3>2+</h3>
-        <span>Years Experience</span>
+        <span>Years of Hands-On Project Experience</span>
       </div>
     </div>
   </section>

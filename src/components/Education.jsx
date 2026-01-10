@@ -9,7 +9,7 @@ const Education = () => (
     <div className="timeline">
       <div className="timeline-item">
         <div className="timeline-content">
-          <div className="timeline-badge">2022 — Present</div>
+          <div className="timeline-badge">2022 — 2026 (Completed) </div>
           <div className="timeline-head">
             <FaGraduationCap className="grad-icon" />
             <h3>Diploma in Electronics & Telecommunication Engineering</h3>
