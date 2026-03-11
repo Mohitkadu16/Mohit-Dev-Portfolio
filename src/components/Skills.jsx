@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCode, FaServer, FaTools, FaPalette, FaBrain, FaGithub, FaMobileAlt } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiPython, SiHtml5, SiCss3, SiCplusplus, SiReact, SiNextdotjs, SiNodedotjs, SiNpm, SiGit, SiGithub, SiFirebase, SiSupabase, SiFigma, SiWordpress, SiGoogle, SiOllama, SiGithubcopilot } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiPython, SiHtml5, SiCss3, SiCplusplus, SiReact, SiNextdotjs, SiNodedotjs, SiNpm, SiGit, SiGithub, SiFirebase, SiSupabase, SiFigma, SiWordpress, SiGoogle, SiOllama, SiGithubcopilot, SiFramer } from "react-icons/si";
 import "./Skills.css";
 
 const SkillTag = ({ icon: Icon, label, svgSrc }) => (
@@ -34,6 +34,7 @@ const Skills = () => (
     </div>
     <div className="skills-grid">
       <SkillTag icon={SiReact} label="React" />
+      <SkillTag icon={SiFramer} label="Framer Motion" />
       <SkillTag icon={SiNextdotjs} label="Next.js" />
       <SkillTag icon={SiNodedotjs} label="Node.js" />
       <SkillTag icon={SiNpm} label="Npm" />

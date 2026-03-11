@@ -33,15 +33,15 @@ const Projects = () => (
       </div>
       <div className="project-item">
         <div className="project-image">
-          <img src="/projects/taskwise.webp" alt="Attendance System" />
+          <img src="/projects/photo-portfolio ss.webp" alt="Loyalmanuka Photography Portfolio" />
         </div>
         <div className="project-content">
-          <h3>TaskWise - AI-Powered Task Management & Evaluation</h3>
+          <h3>Loyalmanuka - Cinematic Street Photography Portfolio</h3>
           <ul>
-            <li>Developed TaskWise-AI, an AI-powered task management tool that intelligently evaluates, prioritizes, and streamlines tasks through smart AI-driven insights and a modern user-focused interface.</li>
+            <li>Designed and developed a personal photography portfolio showcasing cinematic street photography, featuring curated collections, a timeline view, and a clean dark aesthetic.</li>
           </ul>
-          <span className="tech-stack">Typescript, React, Node.js, Supabase, Genkit</span>
-          <a href="https://task-wise-ai-six.vercel.app/" className="btn-secondary">View Project</a>
+          <span className="tech-stack">React, Framer Motion, TypeScript, Node.js</span>
+          <a href="https://loyalmanuka.vercel.app/" className="btn-secondary">View Project</a>
         </div>
       </div>
       <div className="project-item">

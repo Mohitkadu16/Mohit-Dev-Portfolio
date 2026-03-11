@@ -11,12 +11,12 @@ const data = [
     tags: ["Web Development", "Responsive Design", "Education Tech"],
   },
   {
-    emoji: "🏆",
+    emoji: "🚀",
     label: "ACHIEVEMENT",
-    title: "Built AI-Powered TaskWise-AI Management Tool",
+    title: "Delivered 15+ Projects in 6 Months via StudKits",
     desc:
-      "Designed and implemented an AI-driven task management app integrating intelligent task evaluation and prioritization, enhancing user productivity and workflow efficiency in 2025.",
-    tags: ["AI Integration", "Task Management", "Productivity"],
+      "Spearheaded the end-to-end delivery of 15+ student-focused hardware & software projects within just 6 months at StudKits — consistently shipping quality work at pace while scaling the startup's product portfolio.",
+    tags: ["Startup", "Product Delivery", "StudKits"],
   },
   {
     emoji: "🏆",
@@ -27,12 +27,12 @@ const data = [
     tags: ["AI Prototype", "Browser Tech", "UX Design"],
   },
   {
-    emoji: "🏆",
+    emoji: "📸",
     label: "ACHIEVEMENT",
-    title: "Co-Created React/Next.js Based Project Kit Platform",
+    title: "Built Loyalmanuka — Photography Portfolio",
     desc:
-      "Collaborated to build a scalable platform showcasing ready-to-assemble IoT and robotic kits, facilitating hobbyist and professional adoption from 2024 to 2025.",
-    tags: ["React", "Next.js", "IoT"],
+      "Designed and launched a personal photography portfolio platform showcasing street photography projects like “SOBO to NOBO”, combining visual storytelling with a custom-built web experience.",
+    tags: ["Photography", "SOBO to NOBO", "Loyalmanuka"],
   },
 ];
 
